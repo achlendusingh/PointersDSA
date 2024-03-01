@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    // int a=5;
+    // int b=9;
+    // int c=10;
+    // string d="heo";
+    // cout<<&a<<endl;
+    // cout<<&b<<endl;
+    // cout<<&c<<endl;
+    // cout<<&d<<endl;
+   // above lines of code store the values in contiguous locations
+   int a=5;
+   int* ptra=&a;
+   int* *qtr=&ptra;
+   cout<<*(*qtr)<<endl;
+   char b='a';
+   char* ptrb=&b;
+   double c=109.3;
+   double* ptrc=&c;
+   cout<<a<<endl;
+   cout<<&a<<endl;
+   cout<<ptra<<endl;
+   cout<<*ptra<<endl;
+   cout<<&ptra<<endl;
+   cout<<endl;
+   cout<<sizeof(ptra)<<endl;
+   cout<<sizeof(ptrb)<<endl;
+   cout<<sizeof(ptrc)<<endl;
+   cout<<sizeof(*ptra)<<endl;
+   cout<<sizeof(*ptrb)<<endl;
+   cout<<sizeof(*ptrc)<<endl;
+    cout<<endl;
+    cout<<ptra+1<<endl;
+    cout<<*ptra+1<<endl;
+    cout<<*ptra*2<<endl;
+    cout<<++(*ptra)<<endl;
+    cout<<(*ptra)++<<endl;
+    cout<<*ptra<<endl;
+    
+    return 0;
+}
