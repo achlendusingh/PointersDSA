@@ -1,0 +1,45 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    // int a[10];
+    // cout<<sizeof(a)<<endl;
+    // int* ptr=a;
+    // cout<<sizeof(ptr)<<endl;
+    // cout<<sizeof(*ptr)<<endl;
+    // cout<<sizeof(a[0]);
+char ch[]="Hello";
+cout<<ch<<endl;
+cout << typeid(ch).name() << endl; 
+cout<<*ch<<endl;
+cout<<&(*ch)<<endl;
+cout<<&ch<<endl;
+cout<<&ch[0]<<endl;
+
+
+
+char *prty=&ch[0];
+cout<<prty<<endl;
+cout<<&prty<<endl<<endl;
+cout<<(int*)&ch[0]<<endl;    //https://cplusplus.com/forum/beginner/32886/
+cout<<&ch[1]<<endl;
+cout<<(int*)&ch[1]<<endl;
+char *ptr=ch;
+cout << typeid(ptr).name() << endl;
+cout<<ptr<<endl;
+cout<<*ptr<<endl<<endl;
+char *qtr=&ch[4];  // this line is going to give error
+cout<<*qtr<<endl;
+cout<<qtr<<endl<<endl;
+
+char *ty=&ch[0];
+
+
+int a[]={2,3,4,5};
+int *ptr2=a;
+cout<<a<<endl;
+cout<<ptr2<<endl;
+cout<<*ptr2<<endl;
+    return 0;
+}
